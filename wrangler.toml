@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright Tony Burns
+
+name = "go-tbhb-dev"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+workers_dev = false
+# account_id comes from CLOUDFLARE_ACCOUNT_ID (set in the gitignored mise.local.toml).
+
+# custom_domain makes Cloudflare create the DNS record and certificate.
+routes = [{ pattern = "go.tbhb.dev", custom_domain = true }]
