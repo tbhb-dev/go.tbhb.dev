@@ -1,0 +1,6 @@
+[Ff]rontmatter
+go.tbhb.dev
+Bazel
+prek
+subcommand
+x_defs

@@ -1,0 +1,9 @@
+{
+  "name": "go-tbhb-dev",
+  "private": true,
+  "type": "module",
+  "description": "The go.tbhb.dev Go vanity import server, a Cloudflare Worker. The tools (TypeScript, Biome, ESLint, Vitest, Stryker) come from tbhb_rules_typescript, and wrangler from tbhb_rules_cloudflare, not from here.",
+  "pnpm": {
+    "onlyBuiltDependencies": []
+  }
+}
