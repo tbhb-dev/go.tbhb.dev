@@ -38,6 +38,7 @@ esac
 execpath
 exhaustruct
 extensionless
+filegroup
 findstr
 flatmap
 frontmatter
@@ -145,6 +146,7 @@ uncomparables
 underef
 unkeyed
 unstampable
+unstub
 unvalidated
 usefixtures
 usetesting
