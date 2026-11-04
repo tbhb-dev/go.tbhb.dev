@@ -6,6 +6,7 @@ afenc
 ascm
 autouse
 avirt
+awrel
 bazelignore
 bazelisk
 bazelrc
