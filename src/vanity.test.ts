@@ -55,13 +55,14 @@ describe("handle", () => {
     );
   });
 
-  it("publishes exactly the five modules", () => {
+  it("publishes exactly the six modules", () => {
     expect([...MODULES].sort()).toEqual([
       "afakt",
       "afenc",
       "ascm",
       "avirt",
       "awrel",
+      "gomodscan",
     ]);
   });
 });
