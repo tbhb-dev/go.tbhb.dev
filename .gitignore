@@ -44,3 +44,7 @@ coverage.xml
 # Wrangler local dev
 node_modules/
 .dev.vars*
+
+# Tracked here although global ignores often skip it: the pinned awrel MCP
+# server this repository runs in its own sessions.
+!.mcp.json
