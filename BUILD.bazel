@@ -57,6 +57,7 @@ BUILDIFIER_EXCLUDES = [
     "./.venv/*",
     "./.mise/*",
     "./bazel-*",
+    "./.bazel-*",
     "./node_modules/*",
     "./tmp/*",
 ]
