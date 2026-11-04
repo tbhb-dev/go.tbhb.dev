@@ -55,7 +55,13 @@ describe("handle", () => {
     );
   });
 
-  it("publishes exactly the four modules", () => {
-    expect([...MODULES].sort()).toEqual(["afakt", "afenc", "ascm", "avirt"]);
+  it("publishes exactly the five modules", () => {
+    expect([...MODULES].sort()).toEqual([
+      "afakt",
+      "afenc",
+      "ascm",
+      "avirt",
+      "awrel",
+    ]);
   });
 });

@@ -14,6 +14,7 @@ export const MODULES: ReadonlySet<string> = new Set([
   "afenc",
   "ascm",
   "avirt",
+  "awrel",
 ]);
 
 /** The go-import and go-source page for a module, as `go get` reads it. */
