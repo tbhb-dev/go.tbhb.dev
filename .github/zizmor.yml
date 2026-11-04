@@ -15,11 +15,19 @@ rules:
   # workflows reference it. Each move of that branch leaves the `# main`
   # comment naming a newer commit until Renovate's bump merges, which is
   # Renovate's job to catch, not a failure for every pull request.
+  #
+  # ci.yml pins tbhb-dev/rules' shared CI actions and workflow the same way.
   stale-action-refs:
     ignore:
+      - ci.yml
       - renovate.yaml
       - renovate-config-validator.yaml
   ref-version-mismatch:
     ignore:
+      - ci.yml
       - renovate.yaml
       - renovate-config-validator.yaml
+  # zizmor wants `$/` for a local reusable workflow, which the pinned
+  # actionlint rejects (actionlint issue 711).
+  self-repository:
+    disable: true

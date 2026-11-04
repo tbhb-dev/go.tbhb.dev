@@ -14,8 +14,6 @@ export default defineConfig({
       provider: "v8",
       include: ["e2e/**/*.mjs"],
       exclude: ["e2e/**/*.test.mjs", "e2e/vitest.config.mjs"],
-      // Until tbhb_rules_typescript's launcher enforces 100% itself.
-      thresholds: { 100: true },
     },
   },
 });
