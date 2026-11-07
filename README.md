@@ -6,7 +6,6 @@ The Go vanity import server for `go.tbhb.dev`, a Cloudflare Worker. A module pat
 
 ```sh
 mise install
-uv sync
 bazelisk run //:bazel_env
 tbhbdev alpha install
 bazelisk test //...
