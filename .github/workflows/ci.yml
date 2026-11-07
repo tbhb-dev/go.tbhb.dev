@@ -67,9 +67,9 @@ jobs:
 
   # The repository-level checks, beside the bazel job, so they don't wait
   # behind the tests: MODULE.bazel tidiness, the Git history secret scan,
-  # the Python dependency audit, zizmor's online audits and the CODEOWNERS
-  # owner check. The Worker imports no npm package, so there is no pnpm
-  # audit, and there is no Go to scan or gazelle to check.
+  # zizmor's online audits and the CODEOWNERS owner check. There is no Python
+  # to audit. The Worker imports no npm package, so there is no pnpm audit,
+  # and there is no Go to scan or gazelle to check.
   repo:
     name: repo
     permissions:
@@ -79,6 +79,7 @@ jobs:
       runs-on: ubuntu-24.04
       timeout-minutes: 25
       module-dirs: .
+      pip-audit-target: ""
 
   # One stable required check for branch protection. `if: always()` runs it
   # even when a needed job failed, and it passes only when every needed
