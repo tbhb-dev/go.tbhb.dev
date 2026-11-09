@@ -40,7 +40,7 @@ jobs:
       # Hardens the runner, sets up Bazel with its caches, and fetches
       # //... with retries; see rules' .github/actions/README.md.
       - name: Set up Bazel for CI
-        uses: tbhb-dev/rules/.github/actions/setup-bazel-ci@8f9efa44bfd6aec8d56270b5dae738d26a6c5d03  # main
+        uses: tbhb-dev/rules/.github/actions/setup-bazel-ci@064ef30fbe27cc8e4989b401a012113eda433079  # main
         with:
           disk-cache: ci
           cache-save: ${{ github.event_name != 'pull_request' }}
@@ -74,7 +74,7 @@ jobs:
     name: repo
     permissions:
       contents: read
-    uses: tbhb-dev/rules/.github/workflows/repo-checks.yml@8f9efa44bfd6aec8d56270b5dae738d26a6c5d03  # main
+    uses: tbhb-dev/rules/.github/workflows/repo-checks.yml@064ef30fbe27cc8e4989b401a012113eda433079  # main
     with:
       runs-on: ubuntu-24.04
       timeout-minutes: 25
@@ -92,6 +92,6 @@ jobs:
     timeout-minutes: 5
     steps:
       - name: Fail if any needed job did not succeed
-        uses: tbhb-dev/rules/.github/actions/ci-conclusion@8f9efa44bfd6aec8d56270b5dae738d26a6c5d03  # main
+        uses: tbhb-dev/rules/.github/actions/ci-conclusion@064ef30fbe27cc8e4989b401a012113eda433079  # main
         with:
           needs: ${{ toJSON(needs) }}
