@@ -15,6 +15,7 @@ export const MODULES: ReadonlySet<string> = new Set([
   "ascm",
   "avirt",
   "awrel",
+  "event-gateway",
   "gomodscan",
 ]);
 
